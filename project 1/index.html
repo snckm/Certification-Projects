@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">We would love to hear your feedback!</p>
+
+			<form id="survey-form">
+				<!-- Name -->
+				<div class="form-group">
+					<label id="name-label" for="name">Name:</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Enter your name"
+						required
+					/>
+				</div>
+
+				<!-- Email -->
+				<div class="form-group">
+					<label id="email-label" for="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Enter your email"
+						required
+					/>
+				</div>
+
+				<!-- Age -->
+				<div class="form-group">
+					<label id="number-label" for="number">Age (optional):</label>
+					<input
+						type="number"
+						id="number"
+						name="age"
+						min="10"
+						max="100"
+						placeholder="Enter your age"
+					/>
+				</div>
+
+				<!-- Dropdown -->
+				<div class="form-group">
+					<label for="dropdown">Which option best describes you?</label>
+					<select id="dropdown" name="role" required>
+						<option value="">Select an option</option>
+						<option value="student">Student</option>
+						<option value="professional">Professional</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+
+				<!-- Radio Buttons -->
+				<div class="form-group">
+					<p>How would you rate your experience?</p>
+					<label>
+						<input type="radio" name="experience" value="excellent" required />
+						Excellent
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="experience" value="good" required />
+						Good
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="experience" value="average" required />
+						Average
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="experience" value="poor" required />
+						Poor
+					</label>
+				</div>
+
+				<!-- Checkboxes -->
+				<div class="form-group">
+					<p>What technologies are you familiar with?</p>
+					<label>
+						<input type="checkbox" name="tech" value="html" />
+						HTML
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="tech" value="css" />
+						CSS
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="tech" value="javascript" />
+						JavaScript
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="tech" value="python" />
+						Python
+					</label>
+				</div>
+
+				<!-- Text Area -->
+				<div class="form-group">
+					<label for="comments">Any additional comments?</label>
+					<textarea
+						id="comments"
+						name="comments"
+						rows="4"
+						placeholder="Enter your comments here"
+					></textarea>
+				</div>
+
+				<!-- Submit Button -->
+				<div class="form-group">
+					<button type="submit" id="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
